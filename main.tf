@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "my-organization-name"
+    organization = "DataKnots-solutions"
 
     workspaces {
       name = "gh-actions-demo"
@@ -18,7 +18,7 @@ terraform {
 provider "snowflake" {
 }
 
-resource "snowflake_database" "demo_db" {
-  name    = "DEMO_DB"
+resource "snowflake_database" "TRAINING_DB" {
+  name    = "TRAINING_DB"
   comment = "Database for Snowflake Terraform demo"
 }
