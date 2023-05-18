@@ -24,7 +24,7 @@ resource "snowflake_database" "DEMO_DB" {
 }
 
 resource "snowflake_schema" "demo_schema" {
-  database = snowflake_database.DEMO_DB.name
+  database = snowflake_database."DEMO_DB".name
   name     = "DEMO_SCHEMA"
   comment  = "Schema for Snowflake Terraform demo"
 }
